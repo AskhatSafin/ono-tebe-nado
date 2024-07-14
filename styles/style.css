@@ -1,14 +1,11 @@
 /*header*/
 
 .header {
-  padding: 92px 24px 55px 24px;
+  padding: 92px 24px 96px 24px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   position: relative;
-  bottom: 40px;
-  /*в какой-то момент поехали отступы по всей верстке - 
-    пришлось подгонять и позиционировать под perfect pixel. Наверное, надо было сразу всем секциям задать отступы */
 }
 
 .header__links-list {
