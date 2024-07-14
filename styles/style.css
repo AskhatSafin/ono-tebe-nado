@@ -15,9 +15,9 @@
   display: flex;
   align-items: center;
   list-style: circle;
-  gap: 8px 33px;
+  gap: 9px 33px;
   padding-left: 26px;
-  position: absolute;
+  white-space: nowrap;
 }
 
 .header__links-list-item_no-bullit {
@@ -39,6 +39,7 @@
   justify-self: center;
   position: relative;
   top: 10px;
+  right: 42px;
 }
 
 .header__logo-image {
@@ -65,10 +66,10 @@
 /*cover*/
 
 .cover {
-  height: 757px;
+  min-height: 757px;
   position: relative;
   top: 4px;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -90,6 +91,7 @@
   font-weight: 700;
   font-size: 100px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .aligned-text {
@@ -127,8 +129,8 @@
 .cover__description {
   align-self: flex-end;
   display: flex;
-  position: absolute;
-  left: 2px;
+  position: relative;
+  right: 575px;
 }
 
 .cover__description-text {
@@ -140,6 +142,7 @@
   line-height: 28px;
   word-spacing: 18px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .bet-button {
@@ -182,7 +185,7 @@
 
 .lots__card-list-item {
   width: 334px;
-  height: 563px;
+  min-height: 563px;
   flex-grow: 1;
   color: #ffffff;
 }
@@ -203,19 +206,19 @@
 }
 
 .card_type_film {
-  background-image: url("/images/card-lot-01.jpg");
+  background-image: url("../images/card-lot-01.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .card_type_book {
-  background-image: url("/images/card-lot-02.jpg");
+  background-image: url("../images/card-lot-02.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .card_type_picture {
-  background-image: url("/images/card-lot-03.jpg");
+  background-image: url("../images/card-lot-03.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -239,6 +242,7 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+
 .lots__look-more-link {
   display: block;
   padding-left: 40px;
@@ -319,4 +323,9 @@
   justify-self: end;
   list-style: none;
   gap: 18px 48px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }
